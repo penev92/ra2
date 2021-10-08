@@ -15,7 +15,7 @@ engineer:
 	Tooltip:
 		Name: Engineer
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75
 	Passenger:
@@ -55,7 +55,7 @@ dog:
 	Tooltip:
 		Name: Attack Dog
 	Selectable:
-		Bounds: 30, 24, 0, -5
+		Bounds: 724, 1158, 0, -241
 	Health:
 		HP: 100
 	Mobile:
@@ -136,7 +136,7 @@ e1:
 	Tooltip:
 		Name: G.I.
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Mobile:
@@ -230,7 +230,7 @@ snipe:
 		Prerequisites: radar, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Passenger:
@@ -272,7 +272,7 @@ spy:
 		Name: Spy
 		GenericName: Soldier
 	Selectable:
-		Bounds: 24, 28, -1, -8
+		Bounds: 579, 1351, -24, -386
 	Health:
 		HP: 25
 	RevealsShroud:
@@ -324,7 +324,7 @@ ghost:
 	Tooltip:
 		Name: Navy SEAL
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Mobile:
@@ -466,7 +466,7 @@ tany:
 	Tooltip:
 		Name: Tanya
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Mobile:
@@ -516,12 +516,13 @@ jumpjet:
 	Tooltip:
 		Name: Rocketeer
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	-TimedConditionBar@ChronoDisable:
 	-ExternalCondition@CHRONODISABLE:
 	-Mobile:
+	-ChronoshiftableWithSpriteEffect:
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
@@ -604,7 +605,7 @@ cleg:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Tooltip:
 		Name: Chrono Legionnaire
 	Buildable:
