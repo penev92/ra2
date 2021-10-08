@@ -107,7 +107,7 @@ Chrome:
 Assemblies:
 	^BinDir|OpenRA.Mods.Common.dll
 	^BinDir|OpenRA.Mods.Cnc.dll
-	ra2|OpenRA.Mods.RA2.dll
+	^BinDir|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
 	common|chrome/assetbrowser.yaml
