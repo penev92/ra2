@@ -1,16 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputPath>../mods/ra2</OutputPath>
+    <OutputPath>../engine/bin</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Properties\launchSettings.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AdditionalFiles Include="Properties\launchSettings.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="$(EngineRootPath)/OpenRA.Game/OpenRA.Game.csproj">
