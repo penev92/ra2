@@ -12,11 +12,6 @@
   <Import Project="../engine/Directory.Build.props" />
 
   <ItemGroup>
-    <!-- Work around an issue where Rider does not detect files in the project root using the default glob -->
-    <Compile Include="**/*.cs" Exclude="$(DefaultItemExcludes)" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="$(EngineRootPath)/OpenRA.Game/OpenRA.Game.csproj">
       <Private>False</Private>
     </ProjectReference>
