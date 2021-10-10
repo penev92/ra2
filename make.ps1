@@ -3,7 +3,7 @@
 ###############################################################
 ########################## FUNCTIONS ##########################
 ###############################################################
-function All-Command
+function All-Command([string]$configuration)
 {
 	If (!(Test-Path "*.sln"))
 	{
@@ -15,7 +15,9 @@ function All-Command
 		return
 	}
 
-	dotnet build -c Release --nologo -p:TargetPlatform=win-x64
+	Write-Host "Building in" $configuration "configuration..."
+	dotnet build -c $configuration --nologo -p:TargetPlatform=win-x64
+
 	if ($lastexitcode -ne 0)
 	{
 		Write-Host "Build failed. If just the development tools failed to build, try installing Visual Studio. You may also still be able to run the game." -ForegroundColor Red
@@ -287,6 +289,12 @@ $modID = $env:MOD_ID
 $env:MOD_SEARCH_PATHS = (Get-Item -Path ".\" -Verbose).FullName + "\mods,./mods"
 $env:ENGINE_DIR = ".."
 
+$configuration = "Release"
+if ($args.Contains("CONFIGURATION=Debug") -eq 1)
+{
+	$configuration = "Debug"
+}
+
 # Fetch the engine if required
 if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 {
@@ -376,7 +384,7 @@ if ($command.Length -gt 1)
 
 switch ($execute)
 {
-	"all" { All-Command }
+	"all" { All-Command($configuration) }
 	"version" { Version-Command }
 	"clean" { Clean-Command }
 	"test" { Test-Command }
