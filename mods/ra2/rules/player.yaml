@@ -79,7 +79,7 @@ Player:
 		LeaveNotification: Leave
 	ConquestVictoryConditions:
 	PowerManager:
-		AdviceInterval: 750
+		AdviceInterval: 30000
 		SpeechNotification: LowPower
 	AllyRepair:
 	PlayerResources:
