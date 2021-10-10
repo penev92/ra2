@@ -2,7 +2,7 @@ caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
 	Selectable:
-		Bounds: 96, 104, -2, -26
+		Bounds: 2316, 5019, -48, -1254
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -64,8 +64,8 @@ caairp:
 		OrderName: AlliedParatroopers
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Allied Paratroopers
-		LongDesc: A Cargo Plane drops six GIs\nanywhere on the map.
+		Name: Allied Paratroopers
+		Description: A Cargo Plane drops six GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -76,8 +76,8 @@ caairp:
 		OrderName: SovietParatroopers
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Soviet Paratroopers
-		LongDesc: A Cargo Plane drops nine conscripts\nanywhere on the map.
+		Name: Soviet Paratroopers
+		Description: A Cargo Plane drops nine conscripts\nanywhere on the map.
 		DropItems: e2,e2,e2,e2,e2,e2,e2,e2,e2
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -144,7 +144,7 @@ caoutp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x3Shape
 	Selectable:
-		Bounds: 178, 180, 0, -38
+		Bounds: 4295, 8688, 0, -1834
 	Tooltip:
 		Name: Tech Outpost
 	Armor:

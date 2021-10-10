@@ -10,7 +10,7 @@ gacnst:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
 	Selectable:
-		Bounds: 220, 155, 0, -20
+		Bounds: 5309, 7481, 0, -965
 	Health:
 		HP: 1000
 	Armor:
@@ -91,7 +91,7 @@ gapowr:
 		Prerequisites: ~structures.allies
 		Description: Provides power for other structures.
 	Selectable:
-		Bounds: 96, 98, -2, -24
+		Bounds: 2316, 4730, -48, -1158
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -136,7 +136,7 @@ gapile:
 		Prerequisites: power, ~structures.allies
 		Description: Trains infantry.
 	Selectable:
-		Bounds: 134, 132, 0, -28
+		Bounds: 3233, 6371, 0, -1351
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -207,7 +207,7 @@ garefn:
 		Prerequisites: power, ~structures.allies
 		Description: Processes ore into credits.
 	Selectable:
-		Bounds: 176, 150, 0, -20
+		Bounds: 4247, 7240, 0, -965
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -285,7 +285,7 @@ gaairc:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	Selectable:
-		Bounds: 142, 150, -3, -42
+		Bounds: 3426, 7240, -72, -2027
 	Health:
 		HP: 600
 	Armor:
@@ -363,8 +363,8 @@ amradr:
 		OrderName: AmericanParatroopers
 		Icon: airborne
 		ChargeInterval: 9000
-		Description: American Paratroopers
-		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
+		Name: American Paratroopers
+		Description: A Cargo Plane drops eight GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -380,7 +380,7 @@ gaweap:
 		Prerequisites: garefn, gapile, ~structures.allies
 		Description: Produces vehicles.
 	Selectable:
-		Bounds: 212, 158, -7, -28
+		Bounds: 5116, 7626, -168, -1351
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -597,7 +597,7 @@ gadept:
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
-		Bounds: 144, 88, -12, -16
+		Bounds: 3475, 4247, -289, -772
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -646,7 +646,7 @@ gatech:
 		Prerequisites: radar, gaweap, ~structures.allies
 		Description: Allows deployment of advanced units.
 	Selectable:
-		Bounds: 122, 216, 0, -81
+		Bounds: 2944, 10425, 0, -3909
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -707,7 +707,7 @@ gapill:
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
-		Bounds: 50, 30, 0, -4
+		Bounds: 1206, 1448, 0, -193
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 416,0,416
@@ -749,7 +749,7 @@ nasam:
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
-		Bounds: 46, 62, 0, -20
+		Bounds: 1110, 2992, 0, -965
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
@@ -802,7 +802,7 @@ gtgcan:
 	RevealsShroud:
 		Range: 10c0
 	Selectable:
-		Bounds: 46, 62, 0, -20
+		Bounds: 1110, 2992, 0, -965
 	Turreted:
 		TurnSpeed: 12
 		InitialFacing: 896
@@ -846,7 +846,7 @@ gaorep:
 		BuildLimit: 1
 		Description: Refines all forms of income by 25%.
 	Selectable:
-		Bounds: 134, 102, -10, -21
+		Bounds: 3233, 4923, -241, -1013
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -880,7 +880,7 @@ gaspysat:
 		Prerequisites: gatech, ~structures.allies
 		Description: Reveals the entire battlefield.
 	Selectable:
-		Bounds: 96, 98, -4, -30
+		Bounds: 2316, 4730, -96, -1448
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -921,7 +921,7 @@ gagap:
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 	Selectable:
-		Bounds: 50, 114, -1, -45
+		Bounds: 1206, 5502, -24, -2172
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -951,7 +951,7 @@ gaweat:
 		BuildLimit: 1
 		Description: Play God with deadly weather!
 	Selectable:
-		Bounds: 116, 106, -2, -26
+		Bounds: 2799, 5116, -48, -1254
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -974,8 +974,8 @@ gaweat:
 		OrderName: WeatherControlDevice
 		ChargeInterval: 15000
 		Icon: lightningstorm
-		Description: Weather Storm
-		LongDesc: Control the weather to destroy enemy forces.
+		Name: Weather Storm
+		Description: Control the weather to destroy enemy forces.
 		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
 		EndChargeSpeechNotification: LightningStormReady
 		SelectTargetSpeechNotification: SelectTarget
@@ -1003,7 +1003,7 @@ gacsph:
 		Description: Allows teleporting units in a 3x3 array.
 		BuildLimit: 1
 	Selectable:
-		Bounds: 176, 110, -5, -14
+		Bounds: 4247, 5309, -120, -675
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -1030,8 +1030,8 @@ gacsph:
 		OrderName: Chronoshift
 		Icon: chrono
 		ChargeInterval: 7500
-		Description: Chronosphere
-		LongDesc: Teleports a group of units across\nthe map.
+		Name: Chronosphere
+		Description: Teleports a group of units across\nthe map.
 		# Those sounds don't work: OpenRA/OpenRA#10540
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
@@ -1066,7 +1066,7 @@ atesla:
 		Footprint: x
 		Dimensions: 1, 1
 	Selectable:
-		Bounds: 44, 102, 0, -40
+		Bounds: 1061, 4923, 0, -1930
 	Health:
 		HP: 600
 	Armor:

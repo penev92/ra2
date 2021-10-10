@@ -17,7 +17,7 @@ e2:
 	Tooltip:
 		Name: Conscript
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Passenger:
@@ -26,6 +26,7 @@ e2:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: M1Carbine
 		RequiresCondition: !rank-elite
@@ -60,7 +61,7 @@ flakt:
 	Tooltip:
 		Name: Flak Trooper
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 100
 	Passenger:
@@ -69,6 +70,7 @@ flakt:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: FlakGuyGun
 		LocalOffset: 256,0,1024
@@ -119,7 +121,7 @@ shk:
 	Tooltip:
 		Name: Tesla Trooper
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 130
 	RevealsShroud:
@@ -131,6 +133,7 @@ shk:
 		CustomPipType: red
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: ElectricBolt
 		RequiresCondition: !rank-elite
@@ -179,7 +182,7 @@ terror:
 	Tooltip:
 		Name: Terrorist
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75
 	Mobile:
@@ -233,7 +236,7 @@ deso:
 	Tooltip:
 		Name: Desolator
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 150
 	RevealsShroud:
@@ -256,6 +259,7 @@ deso:
 		LocalOffset: 320,128,1024
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed
@@ -301,7 +305,7 @@ ivan:
 	Tooltip:
 		Name: Crazy Ivan
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: CrazyIvanVoice
 	Health:
@@ -325,6 +329,7 @@ ivan:
 		Voice: Attack
 		Cursor: bomb
 		OutsideRangeCursor: bomb
+		FacingTolerance: 0
 	TakeCover:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -375,7 +380,7 @@ yuri:
 	Tooltip:
 		Name: Yuri
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: YuriVoice
 	Health:
@@ -414,6 +419,7 @@ yuri:
 		Sequence: stand
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament:
 		Weapon: MindControl
 		MuzzleSequence: muzzle

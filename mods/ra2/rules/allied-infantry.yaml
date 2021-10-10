@@ -15,7 +15,7 @@ engineer:
 	Tooltip:
 		Name: Engineer
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75
 	Passenger:
@@ -55,7 +55,7 @@ dog:
 	Tooltip:
 		Name: Attack Dog
 	Selectable:
-		Bounds: 30, 24, 0, -5
+		Bounds: 724, 1158, 0, -241
 	Health:
 		HP: 100
 	Mobile:
@@ -136,7 +136,7 @@ e1:
 	Tooltip:
 		Name: G.I.
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Mobile:
@@ -148,6 +148,7 @@ e1:
 	AttackFrontal:
 		Voice: Attack
 		RequiresCondition: undeployed
+		FacingTolerance: 0
 	AttackTurreted@deployed:
 		Armaments: deployed, deployed-elite
 		Voice: Attack
@@ -230,7 +231,7 @@ snipe:
 		Prerequisites: radar, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Passenger:
@@ -247,6 +248,7 @@ snipe:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Voiced:
 		VoiceSet: SniperVoice
 	ProducibleWithLevel:
@@ -272,7 +274,7 @@ spy:
 		Name: Spy
 		GenericName: Soldier
 	Selectable:
-		Bounds: 24, 28, -1, -8
+		Bounds: 579, 1351, -24, -386
 	Health:
 		HP: 25
 	RevealsShroud:
@@ -324,7 +326,7 @@ ghost:
 	Tooltip:
 		Name: Navy SEAL
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Mobile:
@@ -346,6 +348,7 @@ ghost:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	RenderSprites:
 		Image: seal
 	Voiced:
@@ -466,7 +469,7 @@ tany:
 	Tooltip:
 		Name: Tanya
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Mobile:
@@ -488,6 +491,7 @@ tany:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:
@@ -516,7 +520,7 @@ jumpjet:
 	Tooltip:
 		Name: Rocketeer
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	-TimedConditionBar@ChronoDisable:
@@ -535,6 +539,7 @@ jumpjet:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Aircraft:
 		CruiseAltitude: 3072
 		InitialFacing: 80
@@ -604,7 +609,7 @@ cleg:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Tooltip:
 		Name: Chrono Legionnaire
 	Buildable:
@@ -643,6 +648,7 @@ cleg:
 		LocalOffset: 320,128,1024
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ChronoshiftableWithSpriteEffect:
