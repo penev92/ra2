@@ -370,7 +370,7 @@ EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
 	EditorCursorLayer:
-	EditorResourceLayer: 
+	EditorResourceLayer:
 		RecalculateResourceDensity: true
 		ResourceTypes:
 			Ore:
