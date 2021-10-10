@@ -366,6 +366,7 @@ World:
 			10: TenMinutesRemaining
 			20: TwentyMinutesRemaining
 	ColorPickerManager:
+		PreviewActor: amcv.colorpicker
 
 EditorWorld:
 	Inherits: ^BaseWorld
