@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
@@ -10,6 +9,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.Cnc", "engine\OpenRA.Mods.Cnc\OpenRA.Mods.Cnc.csproj", "{95F49A14-DDCA-4A9D-901D-FCCA4B659069}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Game", "engine\OpenRA.Game\OpenRA.Game.csproj", "{780F7FD2-B383-4305-B9E6-25F2D384E601}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Launcher", "engine\OpenRA.Launcher\OpenRA.Launcher.csproj", "{B993EF55-12EE-4565-A4A7-0B4D3F151699}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +43,12 @@ Global
 		{780F7FD2-B383-4305-B9E6-25F2D384E601}.Release|Any CPU.Build.0 = Release|Any CPU
 		{780F7FD2-B383-4305-B9E6-25F2D384E601}.Release-x86|Any CPU.ActiveCfg = Release-x86|Any CPU
 		{780F7FD2-B383-4305-B9E6-25F2D384E601}.Release-x86|Any CPU.Build.0 = Release-x86|Any CPU
+		{B993EF55-12EE-4565-A4A7-0B4D3F151699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B993EF55-12EE-4565-A4A7-0B4D3F151699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B993EF55-12EE-4565-A4A7-0B4D3F151699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B993EF55-12EE-4565-A4A7-0B4D3F151699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B993EF55-12EE-4565-A4A7-0B4D3F151699}.Release-x86|Any CPU.ActiveCfg = Release|Any CPU
+		{B993EF55-12EE-4565-A4A7-0B4D3F151699}.Release-x86|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

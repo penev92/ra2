@@ -1,7 +1,7 @@
 Metadata:
 	Title: Red Alert 2
 	Description: The Soviet Union is back!\nThis time to conquer the United States...
-	Version: {DEV_VERSION}
+	Version: 3310f14deaa5572663efcbee384118ced5a6679d
 	Author: the RA2 mod team
 
 ModCredits:
@@ -49,7 +49,7 @@ Packages:
 
 MapFolders:
 	ra2|maps: System
-	~^maps/ra2/{DEV_VERSION}: User
+	~^maps/ra2/3310f14deaa5572663efcbee384118ced5a6679d: User
 
 Rules:
 	ra2|rules/proxy-actors.yaml
@@ -125,12 +125,18 @@ ChromeLayout:
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
+	common|chrome/ingame-info-lobby-options.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
 	ra2|chrome/ingame-debug.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/settings.yaml
+	common|chrome/settings-display.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	common|chrome/lobby.yaml
 	common|chrome/lobby-players.yaml
@@ -198,6 +204,7 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
+	common|hotkeys/chat.yaml
 	ra2|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
@@ -273,7 +280,7 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 ModelSequenceFormat: VoxelModelSequence
 
 AssetBrowser:
-	SupportedExtensions: .shp, .tem, .urb, .sno
+	SupportedExtensions: .shp, .tem, .urb, .sno, .vxl
 
 GameSpeeds:
 	DefaultSpeed: default

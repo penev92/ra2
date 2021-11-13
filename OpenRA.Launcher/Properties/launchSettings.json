@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "Tiberian Dawn": {
+      "commandName": "Project",
+      "commandLineArgs": "Engine.EngineDir=\"${workspaceRoot}/engine\" Game.Mod=cnc"
+    },
+    "Red Alert": {
+      "commandName": "Project",
+      "commandLineArgs": "Engine.EngineDir=\"${workspaceRoot}/engine\" Game.Mod=ra"
+    },
+    "Dune 2000": {
+      "commandName": "Project",
+      "commandLineArgs": "Engine.EngineDir=\"${workspaceRoot}/engine\" Game.Mod=d2k"
+    },
+    "Tiberian Sun": {
+      "commandName": "Project",
+      "commandLineArgs": "Engine.EngineDir=\"${workspaceRoot}/engine\" Game.Mod=ts"
+    },
+    "Red Alert 2": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Engine.EngineDir=${workspaceRoot}/engine\" \"Engine.ModSearchPaths=${workspaceRoot}/mods,./mods\" \"Game.Mod=ra2\" \"Debug.DisplayDeveloperSettings=true"
+    }
+  }
+}

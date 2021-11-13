@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputPath>../mods/ra2</OutputPath>
     <!-- <OutputPath>../engine/bin</OutputPath> -->
     <EngineRootPath>../engine</EngineRootPath>
 
-    <!-- A toq?? -->
-    <CodeAnalysisRuleSet>..\engine\OpenRA.ruleset</CodeAnalysisRuleSet>
+    <!-- TODO: A toq?? -->
+    <CodeAnalysisRuleSet>..\engine2\OpenRA.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
+  <!-- TODO: Switch to $(EngineRootPath)/... -->
   <Import Project="../engine/Directory.Build.props" />
 
   <ItemGroup>
@@ -25,10 +25,17 @@
     </ProjectReference>
   </ItemGroup>
 
-    <!-- A toq?? -->
+  <ItemGroup>
+    <!-- TODO: Switch to $(EngineRootPath)/... -->
+    <None Include="../engine/AUTHORS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- TODO: A toq?? -->
   <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
-    <AdditionalFiles Include="..\engine\stylecop.json" />
+    <AdditionalFiles Include="..\engine3\stylecop.json" />
   </ItemGroup>
 
     <!-- A toq?? -->

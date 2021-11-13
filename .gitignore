@@ -15,9 +15,15 @@ obj
 *.CodeAnalysisLog.xml
 *.lastcodeanalysissucceeded
 _ReSharper.*/
+/.vs
+
+# Visual Studio Code
+/.vscode/settings.json
 
 # binaries
-/*.exe
+mods/*/*.dll
+mods/*/*.mdb
+mods/*/*.pdb
 /*.dll
 /*.dll.config
 /*.so
@@ -33,9 +39,9 @@ _ReSharper.*/
 /mods/ra2/*.exe.config
 /mods/ra2/*.deps.json
 
-# TODO: Compiling creates a /mods/common folder with dlls and pdbs
-OpenRA.Mods.RA2/mods/*
-mods/common/*
+## TODO: Compiling creates a /mods/common folder with dlls and pdbs
+#OpenRA.Mods.RA2/mods/*
+#mods/common/*
 
 # StyleCop
 StyleCopViolations.xml
