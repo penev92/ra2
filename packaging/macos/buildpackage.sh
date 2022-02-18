@@ -135,7 +135,7 @@ build_platform() {
 	fi
 
 	echo "Building core files"
-	RUNTIME="net5"
+	RUNTIME="net6"
 	if [ "${PLATFORM}" = "compat" ]; then
 		RUNTIME="mono"
 	fi
