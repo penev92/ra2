@@ -5,14 +5,17 @@
 			"name": "Launch (RA2)",
 			"type": "coreclr",
 			"request": "launch",
-			"preLaunchTask": "build",
 			"program": "${workspaceRoot}/engine/bin/OpenRA.dll",
+			"windows": {
+				"program": "${workspaceRoot}/engine/bin/OpenRA.exe",
+			},
 			"args": [
-				"Engine.EngineDir=${workspaceRoot}/engine",
-				"Engine.ModSearchPaths=${workspaceRoot}/mods,./mods",
 				"Game.Mod=ra2",
+				"Engine.EngineDir=${workspaceRoot}/engine",
+				"Engine.ModSearchPaths=${workspaceRoot}/mods, ${workspaceRoot}/engine/mods",
 				"Debug.DisplayDeveloperSettings=true",
 			],
+			"preLaunchTask": "build",
 		},
 	],
 }

@@ -1,15 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- <OutputPath>../engine/bin</OutputPath> -->
     <EngineRootPath>../engine</EngineRootPath>
-
-    <!-- TODO: A toq?? -->
-    <CodeAnalysisRuleSet>..\engine2\OpenRA.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
-  <!-- TODO: Switch to $(EngineRootPath)/... -->
-  <Import Project="../engine/Directory.Build.props" />
+  <Import Project="$(EngineRootPath)/Directory.Build.props" />
 
   <ItemGroup>
     <ProjectReference Include="$(EngineRootPath)/OpenRA.Game/OpenRA.Game.csproj">
@@ -26,23 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- TODO: Switch to $(EngineRootPath)/... -->
-    <None Include="../engine/AUTHORS">
+    <None Include="$(EngineRootPath)/AUTHORS">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
-  <!-- TODO: A toq?? -->
-  <ItemGroup>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
-    <AdditionalFiles Include="..\engine3\stylecop.json" />
-  </ItemGroup>
-
-    <!-- A toq?? -->
-  <Target Name="DisableAnalyzers" BeforeTargets="CoreCompile" Condition="'$(Configuration)'=='Release'">
-    <!-- Disable code style analysis on Release builds to improve compile-time performance -->
-    <ItemGroup Condition="'$(Configuration)'=='Release'">
-      <Analyzer Remove="@(Analyzer)" />
-    </ItemGroup>
-  </Target>
 </Project>

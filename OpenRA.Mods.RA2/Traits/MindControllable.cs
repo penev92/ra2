@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
@@ -23,7 +24,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string Condition = null;
 
 		[Desc("The sound played when the mindcontrol is revoked.")]
-		public readonly string[] RevokeControlSounds = { };
+		public readonly string[] RevokeControlSounds = Array.Empty<string>();
 
 		[Desc("Map player to transfer this actor to if the owner lost the game.")]
 		public readonly string FallbackOwner = "Creeps";

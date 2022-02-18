@@ -2,7 +2,6 @@ user.config
 engine
 
 # Visual Studio
-.vs
 Release
 bin
 obj
@@ -20,17 +19,6 @@ _ReSharper.*/
 # Visual Studio Code
 /.vscode/settings.json
 
-# binaries
-#mods/*/*.dll
-#mods/*/*.mdb
-#mods/*/*.pdb
-#/*.dll
-#/*.dll.config
-#/*.so
-#/*.dylib
-#/*.pdb
-#/*.mdb
-
 # backup files by various editors
 *~
 *.orig
@@ -44,12 +32,16 @@ _ReSharper.*/
 # Mac OS X
 .DS_Store
 
-# XCode
-temp.c
-temp.o
-temp.s
-*.resources
-
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+
+# NUnit
+/TestResult.xml
+/lib/
+
+# Support directory
+/Support
+
+# IntelliJ files
+.idea
