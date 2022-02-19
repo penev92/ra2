@@ -163,6 +163,7 @@ ChromeLayout:
 	common|chrome/gamesave-loading.yaml
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/text-notifications.yaml
+	common|hotkeys/control-groups.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
@@ -282,7 +283,10 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 ModelSequenceFormat: VoxelModelSequence
 
 AssetBrowser:
-	SupportedExtensions: .shp, .tem, .urb, .sno, .vxl
+	SpriteExtensions: .shp, .tem, .urb, .sno
+	ModelExtensions: .vxl
+	AudioExtensions: .aud, .wav
+	VideoExtensions: .vqa
 
 GameSpeeds:
 	DefaultSpeed: default
