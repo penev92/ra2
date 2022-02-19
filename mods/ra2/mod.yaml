@@ -122,6 +122,7 @@ ChromeLayout:
 	common|chrome/ingame.yaml
 	common|chrome/ingame-observer.yaml
 	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
@@ -161,6 +162,7 @@ ChromeLayout:
 	common|chrome/gamesave-browser.yaml
 	common|chrome/gamesave-loading.yaml
 	common|chrome/ingame-debuginfo.yaml
+	common|chrome/text-notifications.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
