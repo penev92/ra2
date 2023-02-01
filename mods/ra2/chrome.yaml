@@ -1347,6 +1347,7 @@ sidebar-observer:
 	PanelRegion: 785, 15, 0, 0, 219, 289, 0, 0
 	PanelSides: Center
 	Regions:
+		background: 0, 0, 219, 96 # TODO: Dummy coordinates
 		replay-bottom: 785, 283, 219, 96
 		observer-bottom: 785, 283, 219, 96
 
