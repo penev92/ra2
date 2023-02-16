@@ -286,6 +286,10 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 
 ModelSequenceFormat: VoxelModelSequence
 
+VideoFormats: Vqa
+
+TerrainFormat: DefaultTerrain
+
 AssetBrowser:
 	SpriteExtensions: .shp, .tem, .urb, .sno
 	ModelExtensions: .vxl
